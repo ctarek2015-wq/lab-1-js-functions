@@ -103,3 +103,37 @@ console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
 console.log("Exercise 9 Result:", basicCalculator(10, 5, "add"));
 console.log("Exercise 9 Result:", basicCalculator(10, 5, "multiply"));
 console.log("Exercise 9 Result:", basicCalculator(10, 5, "divide"));
+
+// the extra level up exercises
+
+function calculateGrade(x) {
+  if (x >= 90) {
+    return "A";
+  } else if (x >= 80 && x < 90) {
+    return "B";
+  } else if (x >= 70 && x < 80) {
+    return "C";
+  } else if (x >= 60 && x < 70) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+
+console.log("Exercise 10 Result:", calculateGrade(85));
+console.log("Exercise 10 Result:", calculateGrade(75));
+console.log("Exercise 10 Result:", calculateGrade(65));
+console.log("Exercise 10 Result:", calculateGrade(50));
+console.log("Exercise 10 Result:", calculateGrade(95));
+
+function createUsername(firstName, lastName) {
+  return `${firstName.slice(0, 3)}${lastName.slice(0, 3)}${firstName.length + lastName.length}`;
+}
+
+console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
+
+function numArgs(...args) {
+  return args.length;
+}
+
+console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));

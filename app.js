@@ -22,22 +22,7 @@ console.log("Exercise 2 Result:", isAdult(10));
 console.log("Exercise 2 Result:", isAdult(21));
 
 function isCharAVowel(char) {
-  if (
-    char == "a" ||
-    char == "e" ||
-    char == "i" ||
-    char == "o" ||
-    char == "u" ||
-    char == "A" ||
-    char == "E" ||
-    char == "I" ||
-    char == "O" ||
-    char == "U"
-  ) {
-    return true;
-  } else {
-    return false;
-  }
+  return "aeiuo".includes(char.toLowerCase());
 }
 
 console.log("Exercise 3 Result:", isCharAVowel("a"));
